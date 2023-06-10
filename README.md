@@ -1,59 +1,54 @@
-# Express API Starter with Typescript
+# Othent dARchive API
 
-How to use this template:
-
-```sh
-npx create-express-api --typescript --directory my-api-name
-```
-
-Includes API Server utilities:
-
-* [morgan](https://www.npmjs.com/package/morgan)
-  * HTTP request logger middleware for node.js
-* [helmet](https://www.npmjs.com/package/helmet)
-  * Helmet helps you secure your Express apps by setting various HTTP headers. It's not a silver bullet, but it can help!
-* [dotenv](https://www.npmjs.com/package/dotenv)
-  * Dotenv is a zero-dependency module that loads environment variables from a `.env` file into `process.env`
-* [cors](https://www.npmjs.com/package/cors)
-  * CORS is a node.js package for providing a Connect/Express middleware that can be used to enable CORS with various options.
-
-Development utilities:
-
-* [typescript](https://www.npmjs.com/package/typescript)
-  * TypeScript is a language for application-scale JavaScript.
-* [ts-node](https://www.npmjs.com/package/ts-node)
-  * TypeScript execution and REPL for node.js, with source map and native ESM support.
-* [nodemon](https://www.npmjs.com/package/nodemon)
-  * nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.
-* [eslint](https://www.npmjs.com/package/eslint)
-  * ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
-* [typescript-eslint](https://typescript-eslint.io/)
-  * Tooling which enables ESLint to support TypeScript.
-* [jest](https://www.npmjs.com/package/jest)
-  * Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
-* [supertest](https://www.npmjs.com/package/supertest)
-  * HTTP assertions made easy via superagent.
+Endpoint:
+`/api/v1/archive` - Capture html and screenshot of the URL and upload it to [Arweave](https://arweave.org/) using [Othent](https://othent.io/).
 
 ## Setup
 
-```
+```sh
 npm install
+
+# or
+
+yarn
 ```
 
-## Lint
+Rename `.env.sample` to `.env` and place the value for `BROWSERLESS_API_KEY` and `OTHENT_API_ID`.
 
-```
-npm run lint
-```
-
-## Test
-
-```
-npm run test
-```
+If `BROWSERLESS_API_KEY` is present [browerless](https://www.browserless.io/) endpoint is used else Chrome browser is required to capture the webpage and screenshot of the URL with puppeteer.
 
 ## Development
 
-```
+```sh
 npm run dev
+
+# or
+
+yarn dev
 ```
+
+## Production
+
+```sh
+npm run start
+
+# or
+
+yarn start
+```
+
+## Author
+
+👤 **Pawan Paudel**
+
+* Github: [@pawanpaudel93](https://github.com/pawanpaudel93)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome! \ Feel free to check [issues page](https://github.com/pawanpaudel93/othent-darchive-api/issues).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+Copyright © 2023 [Pawan Paudel](https://github.com/pawanpaudel93)
