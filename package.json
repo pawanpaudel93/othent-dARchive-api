@@ -1,10 +1,11 @@
 {
-  "name": "express-api-starter-ts",
-  "version": "1.2.0",
-  "description": " A basic starter for an express.js API with Typescript",
+  "name": "othent-darchive-api",
+  "version": "1.0.0",
+  "description": "Othent dARchive API",
   "main": "src/index.ts",
+  "type": "module",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "tsc && node dist/src/index.js",
     "dev": "nodemon src/index.ts",
     "build": "tsc",
     "lint": "eslint --fix src test",
@@ -12,10 +13,10 @@
     "typecheck": "tsc --noEmit"
   },
   "keywords": [],
-  "author": "CJ R. <cj@null.computer> (https://w3cj.now.sh)",
+  "author": "Pawan Paudel <pawanpaudel93@gmail.com> (https://pawanpaudel.com.np)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/w3cj/express-api-starter.git"
+    "url": "https://github.com/pawanpaudel93/othent-dARchive-api.git"
   },
   "license": "MIT",
   "dependencies": {
@@ -23,14 +24,18 @@
     "dotenv": "^16.1.4",
     "express": "^4.18.2",
     "helmet": "^7.0.0",
-    "morgan": "^1.10.0"
+    "mime-types": "^2.1.35",
+    "morgan": "^1.10.0",
+    "node-fetch": "^3.3.1",
+    "save-html-screenshot": "^0.0.7"
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",
     "@types/express": "^4.17.17",
     "@types/jest": "^29.5.2",
+    "@types/mime-types": "^2.1.1",
     "@types/morgan": "^1.9.4",
-    "@types/node": "^20.2.5",
+    "@types/node": "^20.2.6",
     "@types/supertest": "^2.0.12",
     "@typescript-eslint/eslint-plugin": "^5.59.9",
     "@typescript-eslint/parser": "^5.59.9",
