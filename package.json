@@ -27,7 +27,7 @@
     "mime-types": "^2.1.35",
     "morgan": "^1.10.0",
     "node-fetch": "^3.3.1",
-    "save-html-screenshot": "^0.0.10"
+    "save-html-screenshot": "^0.0.12"
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",
